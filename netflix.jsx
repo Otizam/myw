@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import propertyImg from '../public/assets/projects/property.jpg';
+import netflixImg from '../public/assets/projects/netflix.jpg';
 import {AiFillCaretRight,} from "react-icons/ai";
-import Link from 'next/link';
 
- const property = () => {
+ const netflix = () => {
   return (
   <div className='w-full'>
     <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
@@ -14,11 +13,11 @@ import Link from 'next/link';
        className='aboslute z-1'
         layout="fill" 
         objectFit="cover" 
-        src={propertyImg} 
+        src={netflixImg} 
         alt="/"
         />
       <div className='aboslute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-        <h2 className='py-2'>Property Finder</h2>
+        <h2 className='py-2'>Netflix App</h2>
         <h3>React Js / Tailwind / Finder</h3>
       </div>
     </div>
@@ -59,7 +58,7 @@ import Link from 'next/link';
       </div>
     </div>
   </div>
-      <Link href='/#projects'>
+      <Link href='/#netflix'>
         <p className='underline cursor-pointer'>Back</p>
       </Link>
     </div> 
@@ -67,4 +66,4 @@ import Link from 'next/link';
   )
 }
 
-export default property
+export default netflix

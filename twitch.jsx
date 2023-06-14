@@ -1,10 +1,9 @@
 import React from 'react';
 import Image from 'next/image';
-import propertyImg from '../public/assets/projects/property.jpg';
+import twitchImg from '../public/assets/projects/twitch.jpg';
 import {AiFillCaretRight,} from "react-icons/ai";
-import Link from 'next/link';
 
- const property = () => {
+ const twitch = () => {
   return (
   <div className='w-full'>
     <div className='w-screen h-[30vh] lg:h-[40vh] relative'>
@@ -12,13 +11,13 @@ import Link from 'next/link';
        </div>
       <Image
        className='aboslute z-1'
-        layout="fill" 
-        objectFit="cover" 
-        src={propertyImg} 
+        layout='fill'
+        objectFit='cover'
+        src={twitchImg} 
         alt="/"
         />
       <div className='aboslute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2'>
-        <h2 className='py-2'>Property Finder</h2>
+        <h2 className='py-2'>Twitch App</h2>
         <h3>React Js / Tailwind / Finder</h3>
       </div>
     </div>
@@ -59,7 +58,7 @@ import Link from 'next/link';
       </div>
     </div>
   </div>
-      <Link href='/#projects'>
+     <Link href='/#twitch'>
         <p className='underline cursor-pointer'>Back</p>
       </Link>
     </div> 
@@ -67,4 +66,4 @@ import Link from 'next/link';
   )
 }
 
-export default property
+export default twitch
